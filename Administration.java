@@ -12,6 +12,7 @@ public class Administration {
         System.out.println("Welcome to the main menu");
         System.out.println("Choose your option");
         System.out.println(" (R)egister | (L)ogin | (A)dmin | (E)xit");
+        
         Scanner s = new Scanner(System.in);
         char choice = s.next().charAt(0);
 
