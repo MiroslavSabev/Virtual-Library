@@ -13,5 +13,6 @@ public class Book implements Serializable {
         this.title = title;
         this.author = author;
         this.content = content;
+        
     }
 }
