@@ -26,7 +26,6 @@ public class User implements Serializable {
 
     // Method to validate password
     public static boolean verifyPassword(String password) {
-
         Pattern pattern1 = Pattern.compile("[\\d+]");
         Pattern pattern2 = Pattern.compile("[a-z]||[A-Z]");
         Pattern pattern3 = Pattern.compile("[^\\w+]");
@@ -43,7 +42,7 @@ public class User implements Serializable {
         boolean third = matcher.find();
         System.out.println(third);
 
-        if (first&&second&&third&&password.length() >= 8) {
+        if (first && second && third && password.length() >= 8) {
             return true;
         }
         else {
